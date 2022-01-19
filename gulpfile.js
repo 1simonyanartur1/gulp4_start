@@ -27,14 +27,14 @@ global.$ = {
       svg: 'src/layout/common/img/icons/svg/*.svg',
 			img: [
 				'src/layout/components/sprite/svg/*.svg',
-				'src/layout/**/*.{jpg,jpeg,png,gif,svg}',
-				'!src/layout/common/img/**/*',
+				'src/layout/blocks/**/*.{jpg,jpeg,png,gif,svg}',
+				'src/layout/common/img/*.{jpg,jpeg,png,gif,svg}',
 			],
 			video: 'src/layout/blocks/**/*.{mp4,ogv,webm}',
 			json: 'src/layout/blocks/**/*.json',
 			files: 'src/files/**/*',
 			robots: 'src/robots.txt',
-			libsCSS: ['src/layout/components/libs/swiper/swiper-bundle.min.css'],
+			libsCSS: [],
 			libsJS: [],
     },
     build: {
@@ -56,12 +56,12 @@ global.$ = {
       html: 'src/layout/**/*.pug',
       sass: 'src/layout/**/*.{scss,sass}',
       js: 'src/layout/**/*.js',
-      fonts: 'src/fonts/**/*.*',
+			fonts: 'src/layout/components/fonts/**/*.*',
 			svg: 'src/layout/common/img/icons/svg/*.svg',
 			img: [
 				'src/layout/components/sprite/svg/*.svg',
-				'src/layout/**/*.{jpg,jpeg,png,gif,svg}',
-				'!src/layout/common/img/**/*',
+				'src/layout/blocks/**/*.{jpg,jpeg,png,gif,svg}',
+				'src/layout/common/img/*.{jpg,jpeg,png,gif,svg}',
 			],
 			video: 'src/layout/blocks/**/*.{mp4,ogv,webm}',
 			files: 'src/files/**/*',
@@ -115,24 +115,3 @@ $.gulp.task('build',
 		),
 	)
 );
-
-
-
-
-// fonts: $.path.src.fonts,
-// 			svg: $.path.src.svg,
-// 			img: $.path.src.img,
-// 			video: $.path.src.video,
-// 			files: $.path.src.files,
-// 			robots: $.path.src.robots,
-// 			json: $.path.src.json,
-// $.gulp.task('default',
-//   $.gulp.series(
-//     'common',
-// 		$.gulp.parallel(
-// 			'dev', 
-// 			'watch', 
-// 			'server'
-// 		),
-//   )
-// );
