@@ -1,5 +1,3 @@
-'use strict';
-
 global.$ = {
   browserSync: require('browser-sync').create(),
   del: require('del'),
