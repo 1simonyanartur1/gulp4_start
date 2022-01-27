@@ -25,8 +25,9 @@ global.$ = {
       svg: 'src/layout/common/img/icons/svg/*.svg',
 			img: [
 				'src/layout/components/sprite/svg/*.svg',
-				'src/layout/blocks/**/*.{jpg,jpeg,png,gif,svg}',
-				'src/layout/common/img/*.{jpg,jpeg,png,gif,svg}',
+				'src/layout/**/*.{jpg,jpeg,png,gif,svg}',
+				'!src/layout/common/img/**/*',
+				'src/layout/common/img/**/*.{jpg,jpeg,png,gif,svg}',
 			],
 			video: 'src/layout/blocks/**/*.{mp4,ogv,webm}',
 			json: 'src/layout/blocks/**/*.json',
@@ -58,8 +59,9 @@ global.$ = {
 			svg: 'src/layout/common/img/icons/svg/*.svg',
 			img: [
 				'src/layout/components/sprite/svg/*.svg',
-				'src/layout/blocks/**/*.{jpg,jpeg,png,gif,svg}',
-				'src/layout/common/img/*.{jpg,jpeg,png,gif,svg}',
+				'src/layout/**/*.{jpg,jpeg,png,gif,svg}',
+				'!src/layout/common/img/**/*',
+				'src/layout/common/img/**/*.{jpg,jpeg,png,gif,svg}',
 			],
 			video: 'src/layout/blocks/**/*.{mp4,ogv,webm}',
 			files: 'src/files/**/*',
